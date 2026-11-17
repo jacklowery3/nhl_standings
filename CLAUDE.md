@@ -1,10 +1,11 @@
 # nhl_standings
 
-Small script that fetches NHL standings from API-Hockey on RapidAPI. See README.md.
+Small script that fetches NHL standings from the NHL API on RapidAPI
+(`nhl-api5.p.rapidapi.com`, `GET /nhlstandings?year=<season end year>`). See README.md.
 
 ## API budget: read this before calling the API
 
-- The user is on the **free Basic plan** (about 100 requests/day). Treat every
+- The user is on the **free Basic plan** (small daily quota). Treat every
   API call as expensive.
 - Make at most one call per task unless the user says otherwise. Never loop,
   poll, or retry automatically. On `429` or `403`, stop and report back.
